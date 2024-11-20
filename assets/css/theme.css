@@ -56,6 +56,11 @@
   font-style: normal;
   font-display: swap;
 }
+html{
+  scroll-behavior:smooth !important;
+  scrollbar-width: 0px;
+}
+
 
 
 .float {
@@ -8642,7 +8647,13 @@ zoom-slider
     top: 4px;
     left: 150px;
   }
-
+}
+  @media only screen and (max-width: 2200px) and (min-width: 1750px) {
+    .custom-logo-area {
+      width: 180px;
+      top: 4px;
+      left: 500px;
+    }
   .header__container .container {
     padding-left: 130px;
   }
@@ -10500,7 +10511,7 @@ h5 {
 }
 
 section {
-  padding-top: 5%;
+  /* padding-top: 5%; */
   /* min-height: 90vh */
 }
 
@@ -11587,14 +11598,25 @@ line-height: 200%;
   width: 400px;
   height: 350px;
   border-radius: 0px 35px;
-  
   background-image: url(../../img/Rectangle.png);
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.We-follow-img:hover{
+  transform: scale(1.1);
+
 }
 .We-follow-img1{
 
   background-image: url(../../img/Rectangle2.png);
   background-repeat: no-repeat;
   height: 650px;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.We-follow-img1:hover{
+  transform: scale(1.1);
+
 }
 @media(max-width:908px){
   .aboutspec-box{
@@ -11705,6 +11727,106 @@ line-height: 200%;
   height: 100%; 
 }
 
+/* testimonials */
+.testimonials{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+figure.snip1157 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 45px;
+    width: 45px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+}
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #e8eaf5;
+  padding: 25px 50px 30px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+.author h5{
+  font-size: 10px;
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fafafa;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 19px;
+  padding: 0 10px 0 98px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1157 .author h5 p {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
 /* footer Style */
 
 a{
@@ -11763,4 +11885,8 @@ a{
 .footer-ul{
   text-align: center;
 }
+}
+.testimonials-box{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

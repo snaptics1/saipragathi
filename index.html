@@ -32,6 +32,7 @@
 	 .swiper {
       width: 100%;
       height:100vh;
+	 
     }
 	@media (max-width:900px) {
 		.swiper {
@@ -55,6 +56,16 @@
       height: 100%;
       object-fit: cover;
     }
+	.home-img-1{
+		width: 100%;
+	}
+	.home-img-1 img{
+		width: 100%;
+		overflow: hidden;
+	}
+	.home-img-1 video{
+		width: 100%;
+	}
   </style>
 </head>
 	<body class="page">
@@ -114,7 +125,7 @@
 			
 			<div class="menu-panel__menu">
 				<div class="menu-panel__menu-item">
-					<a href="#" data-toggle="collapse" 
+					<a href="index.html" data-toggle="collapse" 
 						class="menu-panel__menu-link collapsed">Home</a>
 				</div>
 				<div class="menu-panel__menu-item">
@@ -145,7 +156,7 @@
 		</div>
 	</div>			</header>
 
-
+<div class="">
 	<div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide">
@@ -166,13 +177,17 @@
 		  </div>
 		  <div class="swiper-slide">
 			<div class="home-img-1">
-				<img src="./img/home-bg-4.png" alt="">
+				<video  loop autoplay muted>
+					<source src="./img/video-1.mp4" type="video/mp4">
+				</video>
 				</div>
 		  </div>
 		 
 		</div>
 		<div class="swiper-pagination"></div>
 	  </div>
+</div>
+	
 		
 		
 		
@@ -194,7 +209,7 @@
   
 	  <div class="row g-4">
 		<!-- Left column: Image 1 and Image 2 -->
-		<div class="col-md-6"  data-aos="fade-right">
+		<div class="col-md-6"  data-aos="fade-up">
 		  <div class="row g-4">
 			<div class="col-12">
 			  <div class="card border-0">
@@ -224,7 +239,7 @@
 		</div>
   
 		<!-- Right column: Image 3 -->
-		<div class="col-md-6" data-aos="fade-left">
+		<div class="col-md-6" data-aos="fade-up">
 		  <div class="card border-0 h-100">
 			<img
 			  src="./img/allproduct3.png"
@@ -284,7 +299,7 @@
 					<h3 class="">About SPEC</h3>
 	
 				</div> -->
-				<div class="aboutspec-box-child" data-aos="fade-right" 	data-aos-duration="1000">
+				<div class="aboutspec-box-child" data-aos="fade-up" 	data-aos-duration="1000">
 
 					<h1 class="Thereal">The real estate company you can trust to keep it real</h1>
 					<p class="WithPioneering">With Pioneering innovation in gated communities, we have been growing since 1996. Holding an unwavering vision to offer a sustainable balance between affordability and luxury, we bring you homes that enthrall your heart. We build homes of global standards of construction with a great sense of environmental responsibility. Our mission has been to reach new heights and become the standard bearer of the real estate industry by creating the best living spaces. Our strength lies in our experience, skill and dedication to deliver the best. Keep showering your love and trust on us and we shall pursue our dreams, while we carry out yours!</p>
@@ -299,7 +314,7 @@
 						
 					</div>
 				</div>
-				<div class="aboutspec-box-child" data-aos="fade-left" data-aos-duration="1000">
+				<div class="aboutspec-box-child" data-aos="fade-up" data-aos-duration="1000">
 					<div class="We-follow-img1">
 
 					</div>
@@ -349,6 +364,46 @@
         </div>
 
 
+		<!-- testimonials -->
+
+		<section>
+			<div class="custom-container testimonials-box">
+				<div class="text-center mb-4 w-75 m-auto">
+					<h2>Testimonials</h2>
+					
+				  </div>
+<div class="testimonials">
+	<figure class="snip1157">
+		<blockquote>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.
+		  <div class="arrow"></div>
+		</blockquote>
+		<img src="./img/testimonials1.png" alt="sq-sample3" />
+		<div class="author">
+		  <h5>Mike Torello<p> Executive Engineer</p></h5>
+		</div>
+	  </figure>
+	  <figure class="snip1157 hover">
+		<blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.
+		  <div class="arrow"></div>
+		</blockquote>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+		<div class="author">
+		  <h5>Max Conversion<span> LIttleSnippets.net</span></h5>
+		</div>
+	  </figure>
+	  <figure class="snip1157">
+		<blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.
+		  <div class="arrow"></div>
+		</blockquote>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17" />
+		<div class="author">
+		  <h5>Eleanor Faint<span> LIttleSnippets.net</span></h5>
+		</div>
+	  </figure>
+</div>
+			</div>
+		</section>
+		
 
 		<!-- Footer secton Start -->
 
@@ -606,11 +661,39 @@
 	 slidesPerView: 1,
 	 spaceBetween: 30,
 	 mousewheel: true,
+	 
 	 pagination: {
 	   el: ".swiper-pagination",
 	   clickable: true,
+	//    dynamicBullets: true
 	 },
+	 
    });
+
+   swiper.on('slideChange', () => {
+      // Check if the last slide is active
+      if (swiper.activeIndex === swiper.slides.length - 1) {
+        swiper.mousewheel.disable(); // Disable mousewheel control
+		
+      }else {
+		swiper.mousewheel.enable(); // Enable mousewheel control
+	  }
+ 
+    });
+
+	window.addEventListener('scroll', function() {
+		if(window.scrollY == 0) {
+			swiper.mousewheel.enable();
+		}
+	})
+
+	window.addEventListener('load', function() {
+		if(window.innerWidth < 768) {
+			swiper.mousewheel.enable();
+		}
+	})
+
+
  </script>
   
 <!-- Mirrored from krishnakunjcc.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2024 06:01:15 GMT -->
