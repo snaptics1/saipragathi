@@ -11704,3 +11704,63 @@ line-height: 200%;
 .card-img-top.h-100 {
   height: 100%; 
 }
+
+/* footer Style */
+
+a{
+  text-decoration: none;
+  color:#526979 ;
+}
+.footer-custom{
+ padding-top: 20px;   
+  background:url('../../img/footer-bg.jpeg');
+  width: 100%;
+  background-size: cover;
+  color: #526979;
+  font-size: 14px;
+  height:500px;
+  
+}
+
+.footer-custom h6 {
+  color: #526979;
+ font-weight: bold;
+}
+
+.footer-custom p,
+.footer-customa {
+  font-size: 14px;
+}
+
+.footer-custom.social-icons a {
+  font-size: 18px;
+  transition: 0.3s;
+  
+}
+
+.social-icons{
+  text-align: right;
+}
+.footer-custom.social-icons a:hover {
+  color: #070a0b;
+
+}
+.footer-custom.list-unstyled li a:hover {
+  text-decoration: underline;
+}
+.copy-right{
+  margin-top: 170px;
+ color: #fff;
+}
+.footer-ul{
+  text-align: left;
+}
+@media(max-width: 768px){
+  .footer-custom{
+  
+    height: 1257px;
+}
+.footer-ul{
+  text-align: center;
+}
+}
