@@ -11736,6 +11736,8 @@ line-height: 200%;
   flex-flow: wrap;
   margin: 0;
   height: 100%;
+  gap: 40px;
+    
 }
 figure.snip1157 {
   font-family: 'Raleway', Arial, sans-serif;
