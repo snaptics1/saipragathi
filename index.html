@@ -198,9 +198,9 @@
 			<!-- AllProject secton Start -->
   <section>
 	<div class=" py-5">
-	  <div class="text-center mb-4 w-75 m-auto">
+	  <div class="text-center mb-4 mt-4 w-75 mx-auto">
 		<h2>All Projects</h2>
-		<p class="text-muted">
+		<p class="text-muted mt-2">
 		  Innovates within the real estate sector through technology solutions. Includes
 		  property management software and virtual tour platforms. Aims to streamline processes
 		  and enhance user experiences.
@@ -266,14 +266,59 @@
 			<h5 class="heading-smallest py-3">News From Sai Pragathi</h5>
 
 			<div class="">
-				<marquee class="" style="background-color: #002340; padding: 10px; color: white">
+				<marquee class=""  style="background-color: #002340; padding: 10px; color: white">
 					Bookings in progress at Saisukha vistas , Habsiguda 
 					<img src="./img/Vector.svg" alt="">
 					Bookings in progress at Pragathi Avenue , Uppal
 					<img src="./img/Vector.svg" alt="">
-					Bookings in progress at Pragathi Heaven , Uppal
+
+
+					Bookings in progress at Saisukha vistas , Habsiguda 
 					<img src="./img/Vector.svg" alt="">
-					Bookings in progress at Aakruthi Heaven , Uppal
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">Bookings in progress at Saisukha vistas , Habsiguda 
+					<img src="./img/Vector.svg" alt="">
+					Bookings in progress at Pragathi Avenue , Uppal
+					<img src="./img/Vector.svg" alt="">
 				</marquee>
 			</div>
 		</div>
@@ -333,18 +378,18 @@
             <div class="content">
                 <div class="numberContainer">
                     <p class="numberCard"
-                        style="border-right: 1px solid white; border-bottom: 1px solid white;">
-						1K
+                        style="border-right: 1px solid white; border-bottom: 1px solid white;" id="amount1">
+						 1
 					
 					<span class="Happycustomers">Happy customers</span></p>
-                    <span class="numberCard" style="border-bottom: 1px solid white;">500+
+                    <span class="numberCard" style="border-bottom: 1px solid white;" id="amount2">500+
 
 						<span class="Happycustomers">Properties Listed</span>
 					</span>
-                    <span class="numberCard" style="border-right: 1px solid white;">20+
+                    <span class="numberCard" style="border-right: 1px solid white;" id="amount3">20+
 						<span class="Happycustomers">Project Completed</span>
 					</span>
-                    <span class="numberCard">60+
+                    <span class="numberCard" id="amount4">60+
 
 						<span class="Happycustomers">Agent Support</span>
 					</span>
@@ -692,6 +737,77 @@
 			swiper.mousewheel.enable();
 		}
 	})
+
+
+ </script>
+
+ <script>
+	  var amount1=document.getElementById('amount1')
+
+for(let i=0;i<16;i++){
+  print(i)
+}
+
+
+function print(i){
+  setTimeout(()=>{
+ 
+	amount1.innerHTML=`${i}K`
+  
+  
+},5 * i)
+}
+
+// amount2
+var amount2=document.getElementById('amount2')
+
+for(let i=0;i<3501;i++){
+  print2(i)
+}
+
+
+function print2(i){
+  setTimeout(()=>{
+ 
+	amount2.innerHTML=`${i}+`
+  
+  
+},5 * i)
+}
+
+// amount3
+var amount3=document.getElementById('amount3')
+
+for(let i=0;i<21;i++){
+  print3(i)
+}
+
+
+function print3(i){
+  setTimeout(()=>{
+ 
+	amount3.innerHTML=`${i}+`
+  
+  
+},5 * i)
+}
+
+// amount4
+var amount4=document.getElementById('amount4')
+
+for(let i=0;i<770;i++){
+  print4(i)
+}
+
+
+function print4(i){
+  setTimeout(()=>{
+ 
+	amount4.innerHTML=`${i}+`
+  
+  
+},5 * i)
+}
 
 
  </script>
