@@ -11839,11 +11839,16 @@ a{
  padding-top: 20px;   
   background:url('../../img/footer-bg.jpeg');
   width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #526979;
   font-size: 14px;
-  height:500px;
   
+  /* height:500px; */
+  
+}
+.footer-inner-box{
+  margin-top: 60px;
 }
 
 .footer-custom h6 {
@@ -11882,7 +11887,7 @@ a{
 @media(max-width: 768px){
   .footer-custom{
   
-    height: 1257px;
+    /* height: 1257px; */
 }
 .footer-ul{
   text-align: center;
@@ -11947,5 +11952,21 @@ a{
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
+.copy-right {
+  margin-top: 253px;
+  color: #fff;
+}
+.footer-custom{
+  padding-top: 60px;   
+   background:url('../../img/footer-bg.jpeg');
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #526979;
+   font-size: 14px;
+   height: 600px;
+   /* height:500px; */
+   
+ }
 
 }
