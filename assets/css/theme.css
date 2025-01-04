@@ -3497,13 +3497,13 @@ header
 */
 
 .header {
-  position: relative;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
   background: white !important;
   z-index: 3;
-  padding: 10px 0px;
+  padding: 18px 0px;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -3544,12 +3544,12 @@ header
 }
 
 .header_is_fixed .header__container .container {
-  position: relative;
+  /* position: relative; */
   top: 25px;
 }
 
 .header_is_fixed .header__logo {
-  display: none;
+  /* display: none; */
 }
 
 .header__logo {
@@ -11508,7 +11508,7 @@ section img {
 
 .header_is_fixed .special-button {
   color: #242323;
-  background: transparent;
+  /* background: transparent; */
   border: 1px solid rgb(136, 99, 55);
   border-radius: 5rem;
   padding: 5px 10px 5px 10px;
@@ -11955,11 +11955,28 @@ a{
   justify-content: center;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .img-section {
+    position: static; 
+    top: 25%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .about-section {
+    position: relative;
+    background-color: #c7e8fa;
+    height: auto; /* Adjusted for better responsiveness */
+    padding: 50px 20px;
+  }
+}
 .about-image {
   max-width: 100%; /* Ensures images scale properly */
 }
 .drive-us-section {
   padding-top: 200px;
+  padding-bottom: 50px;
   background-color: #2b6391;
   color: #fff;
 }
