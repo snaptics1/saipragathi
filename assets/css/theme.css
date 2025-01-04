@@ -11579,7 +11579,7 @@ section img {
   width: 30%;
 }
 .Thereal{
-  color: #005CA6;
+  color: black;
 font-family: "Libre Franklin";
 font-size: 48px;
 font-style: normal;
@@ -11587,7 +11587,7 @@ font-weight: 700;
 line-height: normal;
 }
 .WithPioneering{
-  color: #000;
+  color: black;
 font-family: "Libre Franklin";
 font-size: 14px;
 font-style: normal;
@@ -11598,7 +11598,7 @@ line-height: 200%;
   width: 400px;
   height: 350px;
   border-radius: 0px 35px;
-  background-image: url(../../img/Rectangle.png);
+  background-image: url(../../img/sukha.jpg);
   background-repeat: no-repeat;
   transition: all 0.5s ease-in-out;
 }
