@@ -11770,12 +11770,13 @@ figure.snip1157 blockquote {
   border-radius: 8px;
   position: relative;
   background-color: #e8eaf5;
-  padding: 25px 50px 30px 50px;
-  font-size: 0.8em;
+  padding: 35px 50px 40px 50px;
+  font-size: 1.2em;
   font-weight: 500;
   margin: 0;
   line-height: 1.6em;
   font-style: italic;
+  height: fit-content;
 }
 .author h5{
   font-size: 10px;
@@ -11811,7 +11812,9 @@ figure.snip1157 .arrow {
 figure.snip1157 .author {
   position: absolute;
   bottom: 19px;
-  padding: 0 10px 0 98px;
+  padding:10px 0;
+  width: 100%;
+  text-align: center;
   margin: 0;
   text-transform: uppercase;
   color: #ffffff;
@@ -11827,6 +11830,9 @@ figure.snip1157 .author h5 p {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
+}
+.author h5 {
+  font-size: 16px;
 }
 
 /* footer Style */
@@ -11950,9 +11956,9 @@ a{
 .img-section {
   position: absolute; 
   top: 25%;
-  left: 15%;
+  left: 17%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 40px;
 }
 @media (max-width: 768px) {
@@ -12119,11 +12125,13 @@ margin-bottom: 50px;
 
   .on-going-container {
     background-color: #f5f3f0;
-    background-image: url('../../img/Grid.png');
+    background-image: url('../../img/projectsBgImage.jpg');
     background-position: center;
     margin-top: 30px;
     border-radius: 30px;
     padding-bottom:20px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   
   .op-heading {
@@ -12180,6 +12188,10 @@ margin-bottom: 50px;
   
   .view-button a {
     color: #fff;
+  }
+  .view-button a:nth-child(2) {
+    color: #fff;
+    top: 20px;
   }
   .complete-project button{
     width: 100%;
