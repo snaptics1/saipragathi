@@ -41,6 +41,10 @@ background-image: url(img/RESIDENTIAL_ELEVATION.jpeg);
 height: 600px;
 background-size: cover;
 }
+.hero-section-kpr{
+    background-image: url(img/kprhomes.jpeg) !important;
+
+}
 .hero-section2 {
     background-image: url(img/banner1.png);
     height: 650px;
