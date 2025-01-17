@@ -34,7 +34,7 @@ background-size: cover;
 }
 .banner-text{
     position: relative;
-    left: -140px;
+    /* left: -140px; */
 }
 .hero-section {
 background-image: url(img/RESIDENTIAL_ELEVATION.jpeg);
