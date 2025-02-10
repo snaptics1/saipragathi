@@ -12263,7 +12263,7 @@ margin-bottom: 50px;
   font-size: 26px;
 }
 .contact-form {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .contact-form .col-md-6{
@@ -12280,5 +12280,17 @@ margin-bottom: 50px;
 section {
   background-color: #d2ebea;
 }
-
+.footer-custom {
+  background: none;
+}
+.copy-right {
+  margin-top: 20px;
+  color: #000;
+}
+.inquiry-section input{
+  margin-bottom: 10px;
+}
+.inquiry-form  h2{
+  font-size: 18px;
+}
 }
