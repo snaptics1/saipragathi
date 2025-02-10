@@ -11633,6 +11633,7 @@ line-height: 200%;
     width: 90%;
     height: 350px;
     border-radius: 0px 35px;
+    margin: auto;
     
     background-image: url(../../img/Rectangle.png);
   }
@@ -12241,4 +12242,43 @@ margin-bottom: 50px;
     .project-card .card-title{
         font-size: 14px !important;
     }
+}
+
+/* newly added responsiveness */
+
+@media screen and (max-width:767px){
+  .Thereal {
+    font-size: 26px;
+  }
+  .WithPioneering{
+    text-align: justify;
+  }
+.updatedText{
+  font-size: 30px !important;
+}
+.home-img-1 {
+  height: 100%;
+}
+.why-choose-section h2 {
+  font-size: 26px;
+}
+.contact-form {
+  width: 90%;
+  margin: auto;
+}
+.contact-form .col-md-6{
+  padding: 0 !important;
+}
+.on-going-container {
+  padding: 0 !important;
+  width: 88%;
+  background: transparent;
+}
+.project-card {
+  background-size: 100% 100%;
+}
+section {
+  background-color: #d2ebea;
+}
+
 }
